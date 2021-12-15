@@ -13,4 +13,9 @@ router.route('/:id')
   .patch(jewelController.updateJewel)
   .delete(jewelController.deleteJewel);
 
+router.route('/:category')
+  .get(jewelController.getJewel)
+  .patch(jewelController.updateJewel)
+  .delete(jewelController.deleteJewel);
+
 module.exports = router;
