@@ -1,7 +1,5 @@
 const dotenv = require('dotenv').config({ path: './config.env' }); 
-
 const mongoose = require('mongoose');
-
 const app = require('./app');
 
 // npm i install mongoose@5, then choose the connection string from config file 

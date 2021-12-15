@@ -85,9 +85,9 @@ exports.deleteJewel = async (req, res) => {
 
   try{
     const jewel = await Jewel.findByIdAndDelete(req.params.id);
-    if (!jewel) {
-      return new AppError('No document found with that ID', 404);
-    }
+    // if (!jewel) {
+    //   return new AppError('No document found with that ID', 404);
+    // }
     res.status(204).json({
       status : success,
       data: null
