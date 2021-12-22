@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+        link(rel="stylesheet" href="css/style.css")
+        link(rel="stylesheet" href="css/media_queries.css")
+        link(rel="icon" href="img/small-logo.svg" type="image/icon type")
+
+        title Zircon
+
+        script(defer src="js/script.js")
+
+    body.all-items-body
+        div.animate-text-container
+            div.top-text FREE SHIPPING OVER $200 &nbsp;&nbsp;&nbsp;&nbsp;  48HR DELIVERY
+
+        header.header.items-nav-color
+            a(href="index.html").remove-link-text-decor
+                img.logo(src="img/j-logo.svg")
+            nav.main-nav
+                ul.main-nav-list
+                    li:a.nav-browse(href="items.html") Browse Products
+                    li:a(href="checkout.html") Browse
+                        img.shop-icon(src="img/shop-bag-icon.svg")
+
+        section
+            div.all-items-frontpage
+                img.all-items-img(src="img/all-items.jpg")
+                div.all-items-heading
+                    h1 COLLECTIONS
+                    p Browse through all collections
+
+        section
+            div
+                h3.curate-collect-heading EXPLORE COLLECTIONS
+            div.all-items-container.curate-collect-items
+
+              each jewel in jewels
+                div.slide1
+                    a(href="single-item.html")
+                    img.collect-item-img(src=`img/${jewel.category}s/${jewel.picture}`)
+                    p.curate-item-descrip= jewel.name
+                    p.curate-item-price= jewel.price
+
+                
+
+        footer.footer
+            .footer-grid
+                div
+                    h3 PRODUCTS
+                    ul.footer-items
+                        li ALL JEWELRY
+                        li EARRINGS
+                        li RINGS
+                        li BRACELETS
+                        li NECKLACES
+                div
+                    h3 COMPANY
+                    ul.footer-items
+                        li ABOUT US
+                        li CONTACT US
+                        li CAREER
+                div
+                    h3 HELP
+                    ul.footer-items
+                        li TERMS AND CONDITIONS
+                        li SHIPPNG AND RETURNS
+                        li PRIVACY POLICY
+                        li FAQ
+                div
+                    h3 FIND US ON SOCIAL MEDIA
+                    ul.footer-items
+                        li FACEBOOK
+                        li INSTAGRAM
+                        li TWEETER
+                        li TIKTOK
+            .footer-logo-container
+                img.footer-logo(src='img/j-logo.svg')
