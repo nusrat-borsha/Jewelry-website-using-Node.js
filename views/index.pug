@@ -1,0 +1,144 @@
+doctype html 
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        link(rel='stylesheet' href='css/style.css')
+        link(rel='stylesheet' href='css/media_queries.css')
+        link(rel='icon' href='img/j1-logo.svg' type='image/icon type')
+
+        title Zircon 
+
+        script(defer src='js/script.js')
+    body
+        .animate-text-container
+            .top-text FREE SHIPPING OVER $200 48HR DELIVERY
+        header.header
+            img.logo(src="img/j-logo.svg")
+            nav.main-nav
+                ul.main-nav-list
+                    li: a.nav-browse(href="#") Browse Products
+                    li: a(href="#")
+                        img.shop-icon(src="img/shop-bag-icon.svg")
+
+        section.section-hero
+            .hero
+                .hero-img-box
+                    img(src="img/hero.png" class="hero-img")
+                .hero-text-box
+                    h1.heading-primary Jewelry
+                    h1.heading-primary &nbspAlways
+                    h1.heading-primary &nbsp&nbsp&nbsp&nbsp&nbsp&nbspFits
+                    a(href="#").hero-btn Shop Now
+        section
+            .container.grid.grid--4--cols
+
+                .img-item
+                    a(href="/all-collections/earring")
+                        .category-item-container
+                            img(src="img/earrings/earring-1.jpg").earring-img
+                            h3 Earrings
+
+                //--Item 2--
+                .img-item
+                    a(href="/all-collections/ring")
+                        .category-item-container
+                        img(src="img/rings/ring-4.jpg").ring-img
+                        h3 Rings
+
+                //--Item 3--
+                .img-item
+                    a(href="/all-collections/bracelet")
+                        .category-item-container
+                        img(src="img/bracelets/bracelet-3.jpg").brace-img
+                        h3 Bracelets
+
+                //--Item 4--
+                .img-item
+                    a(href="/all-collections/necklace")
+                        .category-item-container
+                        img(src="img/necklaces/necklace-1.jpg").necklace-img
+                        h3 Necklaces
+
+        section
+            div
+                h3.curate-collect-heading CURATED COLLECTIONS
+            div
+                .frontpage-slider.curate-collect-items
+                    .slide
+                        img.curate-item-img(src="img/rings/ring-2.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    .slide
+                        img.curate-item-img(src="img/bracelets/bracelet-2.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    .slide
+                        img.curate-item-img(src="img/necklaces/necklace-3.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    .slide
+                        img.curate-item-img(src="img/rings/ring-6.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    .slide
+                        img.curate-item-img(src="img/necklaces/necklace-2.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    .slide
+                        img.curate-item-img(src="img/earrings/earring-1.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    .slide
+                        img.curate-item-img(src="img/bracelets/bracelet-1.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    .slide
+                        img.curate-item-img(src="img/rings/ring-8.jpg")
+                        p.curate-item-descrip Name of earring
+                        p.curate-item-price $200
+
+                    button.slider__btn.slider__btn--left &larr;
+                    button.slider__btn.slider__btn--right &rarr;
+
+        footer.footer
+            .footer-grid
+                div
+                    h3 PRODUCTS
+                    ul.footer-items
+                        li ALL JEWELRY
+                        li EARRINGS
+                        li RINGS
+                        li BRACELETS
+                        li NECKLACES
+                div
+                    h3 COMPANY
+                    ul.footer-items
+                        li ABOUT US
+                        li CONTACT US
+                        li CAREER
+                div
+                    h3 HELP
+                    ul.footer-items
+                        li TERMS AND CONDITIONS
+                        li SHIPPNG AND RETURNS
+                        li PRIVACY POLICY
+                        li FAQ
+                div
+                    h3 FIND US ON SOCIAL MEDIA
+                    ul.footer-items
+                        li FACEBOOK
+                        li INSTAGRAM
+                        li TWEETER
+                        li TIKTOK
+            .footer-logo-container
+                img.footer-logo(src='img/j-logo.svg')

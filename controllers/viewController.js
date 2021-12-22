@@ -35,3 +35,23 @@ exports.getAllCollection = async (req, res) => {
     });
   }
 };
+
+
+exports.getJewelBasedOnCategory = async (req, res) => {
+
+  try{
+     console.log(req.params.category);
+     const jewels = await Jewel.find({category : req.params.category});
+     res.status(200).render('all-items', {
+         jewels
+     });
+
+
+  } catch(err){
+
+    res.status(400).json({
+      status : 'fail',
+      message : 'Invalid data sent'
+    });
+  }
+};

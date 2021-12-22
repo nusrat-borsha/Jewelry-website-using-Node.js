@@ -11,8 +11,8 @@ router
   .get(viewController.getAllCollection);
 
 router
-  .route('/category/:id') ;
-  //.get(viewController.getSingleJewel);
+  .route('/all-collections/:category') 
+  .get(viewController.getJewelBasedOnCategory);
 
 
 module.exports = router;
